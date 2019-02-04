@@ -1,0 +1,14 @@
+#MainContainer {
+   background-color: gray;
+   display:flex;
+}
+@media screen and (max-width:1000px) {
+ #header{
+display:flex;
+justify-content:center;
+ }
+.name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+}
