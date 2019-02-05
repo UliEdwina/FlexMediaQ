@@ -47,7 +47,7 @@ ul {
 
    margin-left:10px;
 }
-   #name{
+   #ME{
        font-family: Verdana, Geneva, Tahoma, sans-serif;
        text-align: left;
        
@@ -80,3 +80,54 @@ ul {
        list-style: none;
    }
    }
+   
+   @media screen and (max-width:400px) {
+    #header{
+   display:flex;  
+   flex-direction:column-reverse;
+   border-bottom:1px solid black; 
+   margin-top:-85px;
+
+   
+}
+#mypic {
+display:block;
+margin-left:auto;
+margin-right:auto;
+width: 50%;
+
+}
+   #ME{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       text-align: left;
+       
+       
+   }
+   h1{
+      margin-left:  -180px;
+   }
+   #content1{
+       display:flex;
+       flex-direction:column-reverse;
+    
+   
+   }
+   #box1{
+       width: auto;
+       text-align: center;
+       
+   }
+   #box2{
+       width:auto;
+       text-align: center;
+       
+   }
+   
+   .h2{
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   ul {
+       list-style: none;
+   }
+   }
+   
