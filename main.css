@@ -1,19 +1,59 @@
 #MainContainer {
-   background-color:rgb(209, 60, 70);
-   background: linear-gradient(45deg, red 0%, purple 49%, black 82%);
+    background-color:rgb(209, 60, 70);
+    background: linear-gradient(45deg, red 0%, purple 49%, black 82%);
     background-size: 200%;
     animation: aurora 10s infinite;
 }
-@media screen and (max-width:1300px) {
- #header{
-display:flex;
-justify-content:center;  
-margin-left: -10px;
-border-bottom:1px solid black;
+
+#header {
+    display: flex;
+    border:10px solid black; 
+    justify-items:center;
+    background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");  
+    background-repeat: no-repeat;
+}
+
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.namegraphic{
+    width:300px;
+    margin-left:50px;
+}
+.mainpic{
+    width:300px;
+    margin-left:90px
+}
+ul {
+    list-style: none;
+}
+#content1{
+    display:flex;
+
+}
+#box1{
+    width: 60%;
+    text-align: center;
+    border: 10px solid black;
+    
+    
+}
+#box2{
+    width:40%;
+    text-align: center;
+    border: 10px solid black;
+    
+}
+
+@media screen and (max-width:1300px) and (orientation: portrait) {
+#header{
+     
+    margin-left: -10px;
+    
  }
  .namegraphic{
-    width:300px;
-    margin-left:40px;
+    width:500px;
+    margin-left:-210px;
 }
 .name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -43,132 +83,118 @@ border-bottom:1px solid black;
     
 }
 
-.h2{
-    font-family: Arial, Helvetica, sans-serif;
+
 }
-ul {
-    list-style: none;
-}
-}
-@media screen and (max-width:600px) {
-    #header{
-   display:flex;  
-   border:10px solid black; 
+@media only screen and (min-width:600px) and (max-width:1299px) {
+#header{
+
+margin-left:200px;
     width: 100%;
-   
-   background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");  
-
+    background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");  
+    background-repeat: no-repeat;
 
 }
-   #ME{
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-       text-align: left;
-    
+#ME{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    }
+.namegraphic{
+    width:270px;
+padding-left:250px;
+padding-top:60px;
        }
-       .namegraphic{
-           width:220px;
-           margin-left:-100px;
-       }
-   h1{
-      margin-left:  -180px;
+       
+h1{
+    margin-left:  -180px;
    }
-   #content1{
-       display:flex;
-       flex-direction:column-reverse;
+#content1{
+    display:flex;
+    flex-direction:column-reverse;
     position:relative;
     right:8px;
-   
-   }
-   #box1{
-       position:relative;
-       left:-2px;
-       text-align: center;
-       width:100%;
-   }
-   #box2{
+    }
+#box1{
     position:relative;
     left:-2px;
-       text-align: center;
-       width:100%;
+    text-align: center;
+    width:100%;
+   }
+#box2{
+    position:relative;
+    left:-2px;
+    text-align: center;
+    width:100%;
    }
    
-   .h2{
-       font-family: Arial, Helvetica, sans-serif;
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
    }
-   ul {
-       list-style: none;
+ul {
+    list-style: none;
    }
    }
    
-   @media screen and (max-width:400px) {
+@media screen and (min-width:200px) and (max-width:599px) {
     
-        #MainContainer {
-            background-color: black ;
-            width:100%;
-            
-         }
-         #header{
-   display:flex;  
-   flex-direction:column-reverse;
-   border-bottom:1px solid black; 
-   margin-left: 24px;
-   background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");
-   width:80%;
-   height:400px;
+#MainContainer {
+    width:100%;
+            }
+#header{
+    display:flex;  
+    flex-direction:column-reverse;
+    border-bottom:1px solid black; 
+    margin-left: 24px;
+    background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");
+    width:80%;
+    height:400px;
    
                 }
 .namegraphic{
-width:100%;
-margin-left:-28px;
+    width:100%;
+    margin-left:-28px;
 
 }
-#mypic {
-display:block;
-margin-left:auto;
-margin-right:auto;
-padding-bottom: 25%;
-width: 60%;
+.mainpic {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 25%;
+    width: 60%;
 }
-   #ME{
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       text-align: left;
+#ME{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
        
        
    }
-   h1{
-      margin-left:  -180px;
+h1{
+    margin-left:  -180px;
    }
-   #content1{
-       display:flex;
-       flex-direction:column-reverse;
+#content1{
+    display:flex;
+    flex-direction:column-reverse;
     position: relative;
     flex-grow: inherit;
     left:10px;
     width:100%;
    
    }
-   #box1{
-       width: auto;
-       text-align: center;
-       position: relative;
-       left:-8px;
+#box1{
+    width: auto;
+    text-align: center;
+    position: relative;
+    left:-8px;
        
    }
    #box2{
-       width:auto;
-       text-align: center;
-       position: relative;
-       left:-8px;
+    width:auto;
+    text-align: center;
+    position: relative;
+    left:-8px;
        
    }
    
-   .h2{
-       font-family: Arial, Helvetica, sans-serif;
-   }
-   ul {
-       list-style: none;
-   }
+
    } 
    
    
