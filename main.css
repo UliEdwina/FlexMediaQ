@@ -1,54 +1,95 @@
 #MainContainer {
-    background-color:rgb(209, 60, 70);
-    background: linear-gradient(45deg, red 0%, purple 49%, black 82%);
-    background-size: 200%;
-    animation: aurora 10s infinite;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+     "header"
+     "content"
+     "footer";
+    background-color:#733D56;
 }
 
 #header {
-    display: flex;
-    border:10px solid black; 
+    
     justify-items:center;
-    background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");  
+    background-color:#733D56;
+    grid-area: header;
+    
+}
+
+h1, h2{
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    color:white;
+}
+.name{
+   
+    text-align: center;
+    color:white;
+}
+.caption{
+    text-align: center;
+    color:white;
+}
+.list2{
+    list-style-type: none;
+    color:white;
+
+}
+.list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:white;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    list-style-type:none;
+    font-size: 30px;
+}
+#content{
+    background-color: #3B2F40;
+    
+}
+.box1{
+    
+    background-color:#120F26;
+    grid-area:content;
+    padding-left: 180px;
+
+}
+.box2{
+    display:grid;
+    grid-template-columns: 1fr  1fr;
+    background-color: #3B2F40;
+    grid-area:footer;
+    margin-left:100px;
+    
+}
+
+#left{
+    justify-self:start;
+    padding-left:190px;
+}
+#right{
+    justify-self:end;
+    padding-right:300px;
+    
+}
+
+.paralax{
+    /* The image used */
+    background-image: url("./Assets/207B3988-48C4-42A3-9D26-D784962EBF64.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-}
+    background-size: cover;
+  }
 
-.h2{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.namegraphic{
-    width:300px;
-    margin-left:50px;
-}
-.mainpic{
-    width:300px;
-    margin-left:90px
-}
-ul {
-    list-style: none;
-}
-#content1{
-    display:flex;
-
-}
-#box1{
-    width: 60%;
-    text-align: center;
-    border: 10px solid black;
-    
-    
-}
-#box2{
-    width:40%;
-    text-align: center;
-    border: 10px solid black;
-    
-}
-
-@media screen and (max-width:1300px) and (orientation: portrait) {
-#header{
+/*@media screen and (max-width:800px)  {
+  #header{
      
-    margin-left: -10px;
+   margin-left: -10px;
     
  }
  .namegraphic{
@@ -84,14 +125,13 @@ ul {
 }
 
 
-}
+
 @media only screen and (min-width:600px) and (max-width:1299px) {
 #header{
 
 margin-left:200px;
     width: 100%;
-    background-image: url("Assets/waldemar-brandt-1284414-unsplash.gif");  
-    background-repeat: no-repeat;
+    
 
 }
 #ME{
@@ -195,6 +235,6 @@ h1{
    }
    
 
-   } 
+   } */
    
    
