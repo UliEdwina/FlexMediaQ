@@ -1,18 +1,17 @@
 #MainContainer {
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-     "header"
-     "content"
-     "footer";
-    background-color:#733D56;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    background-color:#733D56;  
+    
+
 }
 
-#header {
-    
-    justify-items:center;
-    background-color:#733D56;
-    grid-area: header;
+.header {
+
+   text-align: center;
+   background-color:#733D56;
+   
     
 }
 
@@ -20,71 +19,69 @@ h1, h2{
     font-family: Trebuchet MS, Helvetica, sans-serif;
     color:white;
 }
-.name{
-   
-    text-align: center;
-    color:white;
-}
-.caption{
-    text-align: center;
-    color:white;
-}
+
+
 .list2{
     list-style-type: none;
     color:white;
+    text-align: center;
 
 }
-.list {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.list{
+    
     color:white;
     font-family: Trebuchet MS, Helvetica, sans-serif;
     list-style-type:none;
-    font-size: 30px;
+    font-size: 30px; 
+    display:flex;
+    justify-content: space-evenly;
+    
 }
-#content{
+
+.content{
+    background-color: #3B2F40;
+}
+
+.Upper_heading{
+    text-align: center;
+}
+
+.box1{
     background-color: #3B2F40;
     
-}
-.box1{
-    
-    background-color:#120F26;
-    grid-area:content;
-    padding-left: 180px;
-
 }
 .box2{
-    display:grid;
-    grid-template-columns: 1fr  1fr;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
     background-color: #3B2F40;
-    grid-area:footer;
-    margin-left:100px;
+}
+.left {
+    width:450px;
+    background-color:#120F26;
     
+}
+.right{
+     width:450px;
+     background-color:#120F26;
 }
 
-#left{
-    justify-self:start;
-    padding-left:190px;
-}
-#right{
-    justify-self:end;
-    padding-right:300px;
-    
-}
 
 .paralax{
     /* The image used */
     background-image: url("./Assets/207B3988-48C4-42A3-9D26-D784962EBF64.jpg");
   
     /* Set a specific height */
-    min-height: 400px; 
+   min-height: 400px; 
   
     /* Create the parallax scrolling effect */
+    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
 
 /*@media screen and (max-width:800px)  {
   #header{
