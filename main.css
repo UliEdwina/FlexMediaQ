@@ -85,7 +85,34 @@ h1, h2{
     background-repeat: no-repeat;
     background-size: cover;
   }
+ @media only screen and (max-width:400px){
+     
+     #header{
+        width:400px;
+     }
+     .name{
+         width:400px;
+     }
+     .caption{
+        width: 400px;
+     }
+    #content{
+        width:400px;
+    }
+    .box1 > .list{
+        width: 400px;
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
 
+    
+
+    .paralax{
+        display:none;}
+    
+
+ }
 /*@media screen and (max-width:800px)  {
   #header{
      
